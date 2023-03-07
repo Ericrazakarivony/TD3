@@ -1,0 +1,117 @@
+# TD3
+
+## Exercise 1: Configure Git
+
+### Question 1: Check that Git is installed on your environment.
+git --version
+
+### Question 2: Configure your name and e-mail globally.
+git config --global user.name "Razakarivony"
+git config --global user.email "eric.razakarivony@edu.devinci.fr"
+
+### Question 3: Check that Git has correctly recorded these two pieces of information.
+git config --global --list
+
+## Exercise 2: Basic workflow with a single file
+
+###Question 1: Create a git repository
+git init
+ls
+
+### Question 3: Check the current git status
+git status
+
+### Question 4: Create a text file named “readme.md” whose content is “# Test repository”
+echo "# Test repository" > readme.md
+
+### Question 5: Check the current git status
+git status
+
+### Question 6: Stage the file
+git add readme.md
+
+### Question 7: Check the current git status
+git status
+
+### Question 8: Commit the file
+git commit -m "Add readme file"
+
+### Question 9: Check the current git status
+git status
+
+### Question 10: Check the git logs
+git log
+
+## Exercice 3 : Basic workflow with multiple files treated separately
+
+### Question 1: Create two empty python files named “main.py” and “functions.py”
+touch main.py
+touch functions.py
+
+### Question 2: Check the current git status
+git status
+
+### Question 3: Stage only the file “main.py”
+git add main.py
+
+### Question 4: Check the current git status
+git status
+
+### Question 5: Commit the file with an appropriate message
+git commit -m "Add main.py file"
+
+### Question 6:  Check the current git status
+git status
+
+### Question 7: Now stage and commit the file “functions.py”
+git add functions.py
+git commit -m "Add functions.py file"
+
+### Question 8: Check the current git status
+git status
+
+### Question 9: Check the git logs
+git log
+
+## Exercice 4 : Basic workflow with multiple files treated all at once
+
+### Question 1: Create three empty files named “requirements.txt”, “.gitignore” and “.private”
+touch requirements.txt .gitignore .private
+
+### Question 2: Check the current git status
+git status
+
+### Question 3: Stage all the files at once
+git add .
+
+### Question 4: Check the current git status
+git status
+
+### Question 5: Commit the current staged files
+git commit -m "Add requirements.txt, .gitignore and .private files"
+
+### Question 6: Check the current git status
+git status
+
+### Question 7: Check the git logs where each log is displayed on a single line
+git log --oneline
+
+## Exercice 5 : Private files
+
+### Question 1: Emulate a temporary empty file by creating a file named “temp.ipynb”
+touch temp.ipynb
+
+### Question 2: Check the current git status
+git status
+
+### Question 3: Add an instruction to .gitignore to prevent git from tracking this temp file
+echo "temp.ipynb" >> .gitignore
+
+### Question 4: Check the current git status
+git status
+
+### Question 5: Create other temporary files named “temp.aux” and “temp.log”
+touch temp.aux temp.log
+
+### Question 6: Check the current git status
+git status
