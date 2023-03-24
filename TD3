@@ -294,3 +294,4 @@ for i in {1..100}; do echo "Hello Mister $i" >> hello_mister.txt; done
 git add hello_mister.txt
 git cat-file -s $(git ls-files --stage | awk '{print $2}')
 stat -c%s hello_mister.txt
+
