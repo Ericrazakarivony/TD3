@@ -116,7 +116,7 @@ touch temp.aux temp.log
 ### Question 6: Check the current git status
 git status
 
-## EXERCICE 6
+## Exercice 6
 
 ### Question 1 : Add an online description of your repository in the "readme.md" file
 touch readme.md
@@ -143,7 +143,7 @@ nano readme.md
 ### Question 8 : Display the changes since the last commit
 git diff
 
-## EXERCICE 7
+## Exercice 7
 
 ### Question 1 : Suppress all your files
 rm -rf *
@@ -196,7 +196,7 @@ ls
 ### Question 16 : Check your commit log history. Have you lost the last 2 commits?
 git log
 
-## EXERCICE 8
+## Exercice 8
 
 ### Question 1 : Create a “s” alias for the git status command
 git config --global alias.s status
@@ -225,7 +225,7 @@ git config --global alias.unstage "reset HEAD --"
 ### Question 9 : Create a "last" alias for the git log -1 HEAD command
 git config --global alias.last "log -1 HEAD"
 
-## EXERCICE 9
+## Exercice 9
 
 ### Question 1 : Create a root directory
 mkdir my_root_directory
@@ -252,7 +252,7 @@ echo -e "blob $(stat -c%s hello_world.txt)\0Hello World" > second_file.txt
 ### Question 8 : Compute the SHA-1 hash of this second file and check it is equal to the Git hash of your first file
 sha1sum second_file.txt
 
-## EXERCICE 10
+## Exercice 10
 
 ### Question 1 : Create an empty Git repository in your root directory 
 rm -rf .git
